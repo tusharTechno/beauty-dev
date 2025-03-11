@@ -259,3 +259,20 @@ body {
 .hamburger input:checked ~ .bar:nth-child(4) {
   transform: translateY(-8px) rotate(-45deg);
 }
+
+.contect-overlay {
+  left: 50%;
+  transform: translateX(-50%);
+  /* Safari iOS 6-9.0 */
+  @media not all and (min-resolution: 0.001dpcm) {
+    @supports (-webkit-appearance: none) {
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+    }
+  }
+  /* Safari iOS 10+ */
+  @supports (-webkit-transform: translateX(-50%)) {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+  }
+}
