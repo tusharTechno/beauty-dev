@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beauty</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="w-full relative z-[10]">
+      <div
+        class="w-[90%] py-2 bg-white mx-auto flex items-center justify-between text-base 2xl:text-lg font-medium text-[var(--accent-color1)]"
+      >
+        <a href="/">
+          <img
+            src="images/logo.svg"
+            alt="brand-logo"
+            class="w-18 md:w-20 h-auto"
+          />
+        </a>
+
+        <div
+          class="navlinks duration-200 overflow-hidden md:overflow-visible absolute px-5 md:px-0 py-0 md:static z-[3] bg-white left-0 top-full w-full md:w-fit h-0 md:h-auto flex flex-col md:flex-row md:items-center gap-5 lg:gap-9 2xl:gap-15"
+        >
+          <a
+            href="/"
+            class="hover:text-[var(--accent-color2)] duration-200 hover:underline"
+            >Home</a
+          >
+          <a
+            href="/"
+            class="hover:text-[var(--accent-color2)] duration-200 hover:underline"
+            >About</a
+          >
+          <a
+            href="/"
+            class="hover:text-[var(--accent-color2)] duration-200 hover:underline"
+            >Mission</a
+          >
+
+          <div class="relative group">
+            <!-- Main Link -->
+            <a
+              href="#"
+              class="submenu-toggle w-full md:w-fit justify-between md:justify-center group-hover:fill-[var(--accent-color2)] fill-[var(--accent-color1)] group-hover:text-[var(--accent-color2)] duration-200 group-hover:underline relative flex items-center gap-1"
+            >
+              Programs
+              <svg
+                width="10"
+                height="6"
+                viewBox="0 0 10 6"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4.47171 5.79526L0.220381 1.8456C-0.0734605 1.5726 -0.0734605 1.13117 0.220381 0.861084L0.926852 0.204743C1.22069 -0.0682478 1.69584 -0.0682478 1.98656 0.204743L5 3.00436L8.01344 0.204743C8.30728 -0.0682478 8.78243 -0.0682478 9.07315 0.204743L9.77962 0.861084C10.0735 1.13408 10.0735 1.57551 9.77962 1.8456L5.52829 5.79526C5.2407 6.06825 4.76555 6.06825 4.47171 5.79526Z"
+                />
+              </svg>
+            </a>
+
+            <!-- Invisible Hover Area to Prevent Flicker -->
+            <div
+              class="absolute hidden md:block top-full left-0 w-full h-2 bg-transparent"
+            ></div>
+
+            <!-- Submenu -->
+            <div
+              class="submenu md:absolute z-[5] text-black border-2 border-[var(--accent-color2)] left-0 top-8 h-0 md:h-auto opacity-0 pointer-events-none md:group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 bg-white md:shadow-lg rounded-lg overflow-hidden w-full md:w-60"
+            >
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-[var(--accent-color1)] hover:text-white"
+                >Barber Program</a
+              >
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-[var(--accent-color1)] hover:text-white"
+                >Cosmetology Program</a
+              >
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-[var(--accent-color1)] hover:text-white"
+                >Natural Hairstylist</a
+              >
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-[var(--accent-color1)] hover:text-white"
+                >Manicure</a
+              >
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-[var(--accent-color1)] hover:text-white"
+                >Instructor</a
+              >
+            </div>
+          </div>
+
+          <a
+            href="/"
+            class="hover:text-[var(--accent-color2)] duration-200 hover:underline"
+            >Our Team</a
+          >
+          <a
+            href="/"
+            class="hover:text-[var(--accent-color2)] duration-200 hover:underline"
+            >Our Service</a
+          >
+          <a
+            href="/"
+            class="hover:text-[var(--accent-color2)] duration-200 hover:underline"
+            >Contact</a
+          >
+        </div>
+
+        <div class="navright flex items-center gap-5 md:gap-4 xl:gap-8">
+          <a
+            href="/"
+            class="hidden lg:inline-block text-center hover:text-[var(--accent-color2)] duration-200 leading-[1.3]"
+          >
+            <span class="block font-bold underline">CALL US</span>
+            +1901-529-7638d
+          </a>
+          <a
+            href="/"
+            class="flex gap-2 fill-[var(--accent-color1)] hover:fill-[var(--accent-color2)] font-bold text-center hover:text-[var(--accent-color2)] duration-200"
+          >
+            <svg
+              class="size-5"
+              width="18"
+              height="20"
+              viewBox="0 0 18 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.60161 11.4102C9.89067 11.4102 11.0821 11.0469 12.0352 10.4297C12.7735 9.95703 13.7344 10.0352 14.3829 10.625C16.1836 12.2578 17.2071 14.5742 17.2032 17.0078V18.0508C17.2032 19.1289 16.3282 20 15.25 20H1.95317C0.875045 20 4.4403e-05 19.1289 4.4403e-05 18.0508V17.0078C-0.0077681 14.5781 1.01567 12.2578 2.81645 10.6289C3.46489 10.0391 4.42973 9.96094 5.16411 10.4336C6.12114 11.0469 7.30864 11.4102 8.60161 11.4102Z"
+              />
+              <path
+                d="M8.60161 9.67188C11.2724 9.67188 13.4375 7.50675 13.4375 4.83594C13.4375 2.16512 11.2724 0 8.60161 0C5.93079 0 3.76567 2.16512 3.76567 4.83594C3.76567 7.50675 5.93079 9.67188 8.60161 9.67188Z"
+              />
+            </svg>
+
+            <span class="hidden lg:inline">LOGIN</span>
+          </a>
+          <div class="hamburgers md:hidden">
+            <label class="hamburger">
+              <input type="checkbox" />
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section
+        class="banner relative h-screen relative after:opacity-[0.5] after:bg-linear-[var(--banner-gradient)] after:absolute after:inset-0 after:w-full after:h-full after:z-[2]"
+      >
+        <img
+          src="images/Banner.webp"
+          alt="banner-img"
+          class="w-full h-full object-cover"
+        />
+        <div
+          class="absolute w-[90%] md:w-[45rem] top-1/2 z-[3] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white"
+        >
+          <h1 class="text-3xl md:text-5xl font-black mb-2 leading-[1.3]">
+            Welcome to Mid-South Beauty and Barbering Academy
+          </h1>
+          <span
+            class="h-0.5 w-40 my-5 bg-[var(--accent-color2)] inline-block"
+          ></span>
+          <p class="text-lg md:text-xl font-semibold">
+            Learn from highly skilled and qualified beauty and barber industry
+            professionals with up-to-date techniques and trends.
+          </p>
+          <a href="/" class="text-base button-primary uppercase mt-5"
+            >Book an APPOINTMENT</a
+          >
+        </div>
+      </section>
+      <section class="mt-12 md:mt-20">
+        <h2
+          class="w-[90%] md:w-[60%] mx-auto text-3xl md:text-4xl font-extrabold text-center text-[var(--accent-color1)]"
+        >
+          Beauty and Barbering Academy <br class="hidden md:block" />
+          Offers on Campus Classes <br class="hidden md:block" />
+          at our Memphis, Tennessee Campus
+        </h2>
+
+        <span
+          class="h-0.5 w-2/3 my-8 bg-[var(--accent-color2)] block mx-auto"
+        ></span>
+        <p
+          class="text-lg md:text-xl w-[90%] md:w-1/2 font-medium mx-auto text-center"
+        >
+          Learn from highly skilled and qualified beauty and barber industry
+          professionals with up-to-date techniques and trends.
+        </p>
+      </section>
+      <section class="programs mt-20">
+        <h2
+          class="text-3xl md:text-4xl font-black mb-2 leading-[1.3] text-center text-[var(--accent-color1)]"
+        >
+          Our Programs
+        </h2>
+        <span
+          class="h-1 w-40 my-5 bg-[var(--accent-color2)] block mx-auto"
+        ></span>
+
+        <div
+          class="grid md:grid-cols-2 lg:grid-cols-3 w-[90%] mx-auto gap-5 mt-8"
+        >
+          <div
+            class="w-full group h-[400px] md:h-[500px] relative relative after:opacity-[0.8] after:bg-linear-[var(--card-gradient)] after:absolute after:inset-0 after:w-full after:h-full after:z-[2]"
+          >
+            <img
+              src="images/programs/program-img1.webp"
+              alt="program-imgs"
+              class="w-full h-full object-cover"
+            />
+            <div class="w-full absolute left-0 top-1/2 -translate-y-1/2 z-[3]">
+              <img
+                src="/images/programs/barbar.svg"
+                class="aspect-square mx-auto block mb-5"
+              />
+              <div class="grid place-items-center">
+                <h3
+                  class="text-center border-[1px] w-fit duration-200 group-hover:!border-[var(--accent-color2)] border-transparent py-1 px-8 leading-[1.1] font-extrabold text-2xl text-white"
+                >
+                  Barber <br />
+                  Program
+                </h3>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="w-full group h-[400px] md:h-[500px] relative relative after:opacity-[0.8] after:bg-linear-[var(--card-gradient)] after:absolute after:inset-0 after:w-full after:h-full after:z-[2]"
+          >
+            <img
+              src="images/programs/program-img2.webp"
+              alt="program-imgs"
+              class="w-full h-full object-cover"
+            />
+            <div class="w-full absolute left-0 top-1/2 -translate-y-1/2 z-[3]">
+              <img
+                src="/images/programs/Cosmetology.svg"
+                class="aspect-square mx-auto block mb-5"
+              />
+              <div class="grid place-items-center">
+                <h3
+                  class="text-center border-[1px] w-fit duration-200 group-hover:!border-[var(--accent-color2)] border-transparent py-1 px-8 leading-[1.1] font-extrabold text-2xl text-white"
+                >
+                  Cosmetology <br />
+                  Program
+                </h3>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="w-full group h-[400px] md:h-[500px] relative relative after:opacity-[0.8] after:bg-linear-[var(--card-gradient)] after:absolute after:inset-0 after:w-full after:h-full after:z-[2]"
+          >
+            <img
+              src="images/programs/program-img3.webp"
+              alt="program-imgs"
+              class="w-full h-full object-cover"
+            />
+            <div class="w-full absolute left-0 top-1/2 -translate-y-1/2 z-[3]">
+              <img
+                src="/images/programs/Hairstylist.svg"
+                class="aspect-square mx-auto block mb-5"
+              />
+              <div class="grid place-items-center">
+                <h3
+                  class="text-center border-[1px] w-fit duration-200 group-hover:!border-[var(--accent-color2)] border-transparent py-1 px-8 leading-[1.1] font-extrabold text-2xl text-white"
+                >
+                  Hairstylist
+                </h3>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="w-full group h-[400px] md:h-[500px] relative relative after:opacity-[0.8] after:bg-linear-[var(--card-gradient)] after:absolute after:inset-0 after:w-full after:h-full after:z-[2]"
+          >
+            <img
+              src="images/programs/program-img4.webp"
+              alt="program-imgs"
+              class="w-full h-full object-cover"
+            />
+            <div class="w-full absolute left-0 top-1/2 -translate-y-1/2 z-[3]">
+              <img
+                src="/images/programs/Esthetician.svg"
+                class="aspect-square mx-auto block mb-5"
+              />
+              <div class="grid place-items-center">
+                <h3
+                  class="text-center border-[1px] w-fit duration-200 group-hover:!border-[var(--accent-color2)] border-transparent py-1 px-8 leading-[1.1] font-extrabold text-2xl text-white"
+                >
+                  Esthetician
+                </h3>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="w-full group h-[400px] md:h-[500px] relative relative after:opacity-[0.8] after:bg-linear-[var(--card-gradient)] after:absolute after:inset-0 after:w-full after:h-full after:z-[2]"
+          >
+            <img
+              src="images/programs/program-img5.webp"
+              alt="program-imgs"
+              class="w-full h-full object-cover"
+            />
+            <div class="w-full absolute left-0 top-1/2 -translate-y-1/2 z-[3]">
+              <img
+                src="/images/programs/manicure.svg"
+                class="aspect-square mx-auto block mb-5"
+              />
+              <div class="grid place-items-center">
+                <h3
+                  class="text-center border-[1px] w-fit duration-200 group-hover:!border-[var(--accent-color2)] border-transparent py-1 px-8 leading-[1.1] font-extrabold text-2xl text-white"
+                >
+                  Manicure
+                </h3>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="w-full group h-[400px] md:h-[500px] relative relative after:opacity-[0.8] after:bg-linear-[var(--card-gradient)] after:absolute after:inset-0 after:w-full after:h-full after:z-[2]"
+          >
+            <img
+              src="images/programs/program-img6.webp"
+              alt="program-imgs"
+              class="w-full h-full object-cover"
+            />
+            <div class="w-full absolute left-0 top-1/2 -translate-y-1/2 z-[3]">
+              <img
+                src="/images/programs/Instructor.svg"
+                class="aspect-square mx-auto block mb-5"
+              />
+              <div class="grid place-items-center">
+                <h3
+                  class="text-center border-[1px] w-fit duration-200 group-hover:!border-[var(--accent-color2)] border-transparent py-1 px-8 leading-[1.1] font-extrabold text-2xl text-white"
+                >
+                  Instructor
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mt-20 py-10 bg-linear-[var(--review-gradient)]">
+        <h2
+          class="text-3xl md:text-4xl font-black mb-2 leading-[1.3] text-white text-center text-[var(--accent-color1)]"
+        >
+          Testimonials
+        </h2>
+        <div class="relative">
+          <div
+            class="swiper mySwiper testimonials-slider md:w-[90%] lg:w-[80%] mt-8 mx-auto"
+          >
+            <div class="swiper-wrapper">
+              <div
+                class="swiper-slide bg-linear-[var(--review-card-gradient)] rounded-3xl pt-10 pb-8 px-8"
+              >
+                <div
+                  class="flex flex-col md:flex-row items-center gap-5 border-b-[1px] border-zinc-900 pb-5"
+                >
+                  <img
+                    src="images/review-img.webp"
+                    alt="review-img"
+                    class="rounded-full size-30 md:size-40"
+                  />
+                  <p class="font-sm font-semibold">
+                    “The Esthetics Program was an incredible experience! The
+                    training I received has helped me build a loyal client base
+                    and grow my business.”
+                  </p>
+                </div>
+                <p
+                  class="font-sm font-normal text-center mt-5 text-[var(--accent-color1)]"
+                >
+                  <span class="font-semibold text-black"
+                    >Crystal Preciado |</span
+                  >
+                  Graduate
+                </p>
+              </div>
+              <div
+                class="swiper-slide bg-linear-[var(--review-card-gradient)] rounded-3xl pt-10 pb-8 px-8"
+              >
+                <div
+                  class="flex flex-col md:flex-row items-center gap-5 border-b-[1px] border-zinc-900 pb-5"
+                >
+                  <img
+                    src="images/review-img.webp"
+                    alt="review-img"
+                    class="rounded-full size-30 md:size-40"
+                  />
+                  <p class="font-sm font-semibold">
+                    “The Esthetics Program was an incredible experience! The
+                    training I received has helped me build a loyal client base
+                    and grow my business.”
+                  </p>
+                </div>
+                <p
+                  class="font-sm font-normal text-center mt-5 text-[var(--accent-color1)]"
+                >
+                  <span class="font-semibold text-black"
+                    >Crystal Preciado |</span
+                  >
+                  Graduate
+                </p>
+              </div>
+              <div
+                class="swiper-slide bg-linear-[var(--review-card-gradient)] rounded-3xl pt-10 pb-8 px-8"
+              >
+                <div
+                  class="flex flex-col md:flex-row items-center gap-5 border-b-[1px] border-zinc-900 pb-5"
+                >
+                  <img
+                    src="images/review-img.webp"
+                    alt="review-img"
+                    class="rounded-full size-30 md:size-40"
+                  />
+                  <p class="font-sm font-semibold">
+                    “The Esthetics Program was an incredible experience! The
+                    training I received has helped me build a loyal client base
+                    and grow my business.”
+                  </p>
+                </div>
+                <p
+                  class="font-sm font-normal text-center mt-5 text-[var(--accent-color1)]"
+                >
+                  <span class="font-semibold text-black"
+                    >Crystal Preciado |</span
+                  >
+                  Graduate
+                </p>
+              </div>
+              <div
+                class="swiper-slide bg-linear-[var(--review-card-gradient)] rounded-3xl pt-10 pb-8 px-8"
+              >
+                <div
+                  class="flex flex-col md:flex-row items-center gap-5 border-b-[1px] border-zinc-900 pb-5"
+                >
+                  <img
+                    src="images/review-img.webp"
+                    alt="review-img"
+                    class="rounded-full size-30 md:size-40"
+                  />
+                  <p class="font-sm font-semibold">
+                    “The Esthetics Program was an incredible experience! The
+                    training I received has helped me build a loyal client base
+                    and grow my business.”
+                  </p>
+                </div>
+                <p
+                  class="font-sm font-normal text-center mt-5 text-[var(--accent-color1)]"
+                >
+                  <span class="font-semibold text-black"
+                    >Crystal Preciado |</span
+                  >
+                  Graduate
+                </p>
+              </div>
+              <div
+                class="swiper-slide bg-linear-[var(--review-card-gradient)] rounded-3xl pt-10 pb-8 px-8"
+              >
+                <div
+                  class="flex flex-col md:flex-row items-center gap-5 border-b-[1px] border-zinc-900 pb-5"
+                >
+                  <img
+                    src="images/review-img.webp"
+                    alt="review-img"
+                    class="rounded-full size-30 md:size-40"
+                  />
+                  <p class="font-sm font-semibold">
+                    “The Esthetics Program was an incredible experience! The
+                    training I received has helped me build a loyal client base
+                    and grow my business.”
+                  </p>
+                </div>
+                <p
+                  class="font-sm font-normal text-center mt-5 text-[var(--accent-color1)]"
+                >
+                  <span class="font-semibold text-black"
+                    >Crystal Preciado |</span
+                  >
+                  Graduate
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="swiper-button-prev !hidden md:!block !absolute bg-white rounded-full !size-11 !p-3 !left-15 top-1/2 transform -translate-y-1/2"
+          >
+            <svg
+              class="w-full h-full"
+              width="22"
+              height="22"
+              viewBox="0 0 22 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.5757 19.895L11.4917 20.979C11.0327 21.438 10.2905 21.438 9.83643 20.979L0.344238 11.4917C-0.114746 11.0327 -0.114746 10.2905 0.344238 9.83643L9.83643 0.344238C10.2954 -0.114746 11.0376 -0.114746 11.4917 0.344238L12.5757 1.42822C13.0395 1.89209 13.0298 2.64893 12.5562 3.10303L6.67236 8.7085H20.7056C21.355 8.7085 21.8774 9.23096 21.8774 9.88037V11.4429C21.8774 12.0923 21.355 12.6147 20.7056 12.6147H6.67236L12.5562 18.2202C13.0347 18.6743 13.0444 19.4312 12.5757 19.895Z"
+                fill="black"
+              />
+            </svg>
+          </div>
+          <div
+            class="swiper-button-next !hidden md:!block !absolute bg-white rounded-full !size-11 !p-3 !right-15 top-1/2 transform -translate-y-1/2"
+          >
+            <svg
+              class="w-full h-full"
+              width="22"
+              height="22"
+              viewBox="0 0 22 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9.30176 1.42822L10.3857 0.344238C10.8447 -0.114746 11.5869 -0.114746 12.041 0.344238L21.5332 9.83154C21.9922 10.2905 21.9922 11.0327 21.5332 11.4868L12.041 20.979C11.582 21.438 10.8398 21.438 10.3857 20.979L9.30176 19.895C8.83789 19.4312 8.84766 18.6743 9.32129 18.2202L15.2051 12.6147H1.17188C0.522461 12.6147 0 12.0923 0 11.4429V9.88037C0 9.23096 0.522461 8.7085 1.17188 8.7085H15.2051L9.32129 3.10303C8.84277 2.64893 8.83301 1.89209 9.30176 1.42822Z"
+                fill="black"
+              />
+            </svg>
+          </div>
+        </div>
+      </section>
+      <section class="partners mt-20">
+        <h2
+          class="text-3xl md:text-4xl font-black mb-2 leading-[1.3] text-[var(--)] text-center text-[var(--accent-color1)]"
+        >
+          Our Partners
+        </h2>
+        <span
+          class="h-1 w-40 my-5 bg-[var(--accent-color2)] block mx-auto"
+        ></span>
+        <div
+          class="flex items-center flex-wrap gap-12 md:gap-10 w-[90%] mx-auto mt-5 justify-center lg:justify-between"
+        >
+          <img class="min-w-30 w-[10%] h-auto" src="images/brands/logo1.webp" />
+          <img class="min-w-30 w-[10%] h-auto" src="images/brands/logo2.webp" />
+          <img class="min-w-30 w-[10%] h-auto" src="images/brands/logo3.webp" />
+          <img class="min-w-30 w-[10%] h-auto" src="images/brands/logo4.webp" />
+          <img class="min-w-30 w-[10%] h-auto" src="images/brands/logo5.webp" />
+          <img class="min-w-30 w-[10%] h-auto" src="images/brands/logo6.webp" />
+        </div>
+
+        <div
+          class="w-[90%] mx-auto mt-20 bg-[url('../images/partner-gradient.webp')] bg-cover bg-center bg-no-repeat text-white py-15 px-3 md:px-20 lg:px-30 lg:px-40 text-base md:text-lg grid gap-10 text-center font-semibold"
+        >
+          <p>
+            At this time, our regular classes are scheduled during these hours
+            to accommodate the needs of our students.
+          </p>
+          <p>
+            As the demand for evening classes grows and we welcome more
+            students, we plan to extend our hours to include night classes,
+            providing even more flexibility for learners.
+          </p>
+          <p class="italic">
+            We are committed to offering accessible education, and as we
+            continue to expand, we will adapt our schedule to meet the needs of
+            all our students. Stay tuned for updates on additional evening class
+            options as we grow!
+          </p>
+        </div>
+      </section>
+      <section class="contact mt-20">
+        <h2
+          class="text-3xl md:text-4xl font-black mb-2 leading-[1.3] text-[var(--)] text-center text-[var(--accent-color1)]"
+        >
+          Contact US
+        </h2>
+        <span
+          class="h-1 w-40 mt-5 bg-[var(--accent-color2)] block mx-auto"
+        ></span>
+        <div class="bg-[var(--accent-color2)] z-[1] mt-28 relative">
+          <div
+            class="w-[85%] lg:w-[75%] absolute left-1/2 -top-20 -translate-x-1/2 z-[2] mx-auto bg-linear-[var(--footer-gradient)] text-white font-semibold text-base md:text-lg text-center py-8 grid gap-5 px-5 rounded-lg"
+          >
+            <h3 class="text-[var(--accent-color2)]">
+              Our current operating hours are from 9:00 AM to 5:00 PM Monday
+              through Friday.
+            </h3>
+            <p class="italic md:w-[80%] mx-auto">
+              We have Saturday clinic hours, call the front desk for scheduling
+              details and to book an appointment 
+            </p>
+          </div>
+          <div
+            class="mx-auto w-[90%] gap-5 pt-50 md:pt-30 pb-10 flex flex-col md:flex-row items-stratch"
+          >
+            <div class="w-full md:w-2/3">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6533.169968705248!2d-89.908744!3d35.042111!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x887f85f45655caa7%3A0x4cf52e5c95d90060!2s3932%20S%20Perkins%20Rd%2C%20Memphis%2C%20TN%2038118!5e0!3m2!1sen!2sus!4v1741607062868!5m2!1sen!2sus"
+                class="w-full h-80 md:h-full rounded-lg overflow-hidden"
+                style="border: 0"
+                allowfullscreen="true"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <div class="w-full md:w-1/3">
+              <form
+                class="h-full w-full bg-[var(--accent-color1)] text-white px-5 py-7 rounded-lg"
+              >
+                <h3 class="font-bold text-base mb-5">Have a question?</h3>
+                <input
+                  type="text"
+                  required
+                  placeholder="Full Name*"
+                  class="w-full h-10 bg-white text-base outline-none px-3 text-black mb-5"
+                />
+                <input
+                  type="tel"
+                  required
+                  placeholder="Phone No*"
+                  class="w-full h-10 bg-white text-base outline-none px-3 text-black mb-5"
+                />
+                <input
+                  type="email"
+                  required
+                  placeholder="Full Email*"
+                  class="w-full h-10 bg-white text-base outline-none px-3 text-black mb-5"
+                />
+                <textarea
+                  placeholder="Message"
+                  class="w-full h-30 py-2 bg-white text-base outline-none px-3 text-black"
+                ></textarea>
+                <div class="flex items-center text-sm gap-2 mt-2">
+                  <input
+                    type="checkbox"
+                    class="size-4 cursor-pointer text-blue-600 rounded-xl border-gray-300 focus:ring-blue-500"
+                  />
+                  <p>I agree to this terms & Conditions</p>
+                </div>
+                <button
+                  class="button-primary w-fit !text-[var(--accent-color1)] mt-5 !block mx-auto"
+                >
+                  Send Request
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="mt-10">
+      <div
+        class="w-[90%] mx-auto flex flex-col md:flex-row items-stratch justify-between gap-y-10 gap-x-5"
+      >
+        <img
+          src="images/logo.svg"
+          class="w-30 md:w-50 h-auto flex"
+          alt="footer-logo"
+        />
+        <div class="grid gap-2 text-base font-medium">
+          <h2 class="mb-2 font-black text-lg text-[var(--accent-color1)]">
+            MSBBA
+          </h2>
+          <a href="/">Home</a>
+          <a href="/">About</a>
+          <a href="/">Mission</a>
+          <a href="/">Programs</a>
+          <a href="/">Ours Service</a>
+          <a href="/">Contact</a>
+        </div>
+        <div class="w-full md:w-96">
+          <a
+            href="tel:+19015297638"
+            class="flex items-center gap-1.5 text-sm mb-2"
+          >
+            <svg
+              width="9"
+              height="9"
+              viewBox="0 0 9 9"
+              class="size-4.5 bg-linear-[var(--footer-icons-gradient)] rounded-xs p-1 fill-[var(--accent-color2)]"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.74334 6.35972L6.77455 5.51595C6.69045 5.48011 6.59697 5.47256 6.50821 5.49443C6.41944 5.51631 6.34018 5.56643 6.28236 5.63725L5.41047 6.7025C4.04211 6.05733 2.94091 4.95613 2.29574 3.58778L3.361 2.71588C3.43196 2.65817 3.48218 2.57891 3.50407 2.4901C3.52595 2.40129 3.51831 2.30777 3.48229 2.22369L2.63852 0.254904C2.59899 0.164271 2.52907 0.0902721 2.44083 0.0456674C2.35258 0.00106264 2.25154 -0.0113522 2.15512 0.0105635L0.326959 0.432446C0.233999 0.453912 0.151059 0.506254 0.0916777 0.580928C0.032296 0.655602 -2.14142e-05 0.748199 1.06459e-08 0.843606C1.06459e-08 5.35247 3.65456 9 8.15639 9C8.25183 9.00006 8.34447 8.96776 8.41918 8.90838C8.49389 8.84899 8.54625 8.76603 8.56773 8.67304L8.98961 6.84488C9.01138 6.74799 8.99871 6.64655 8.95376 6.55799C8.90881 6.46944 8.8344 6.39933 8.74334 6.35972Z"
+              />
+            </svg>
+            <p>+1 901-529-7638</p>
+          </a>
+          <a href="tel:+19015297638" class="flex items-center gap-1.5 text-sm">
+            <svg
+              width="7"
+              height="10"
+              viewBox="0 0 7 10"
+              class="size-4.5 bg-linear-[var(--footer-icons-gradient)] rounded-xs p-1 fill-[var(--accent-color2)]"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3.1403 9.79824C0.491641 5.6842 0 5.26197 0 3.75C0 1.67893 1.567 0 3.5 0C5.433 0 7 1.67893 7 3.75C7 5.26197 6.50836 5.6842 3.8597 9.79824C3.68588 10.0673 3.3141 10.0672 3.1403 9.79824ZM3.5 5.3125C4.30542 5.3125 4.95833 4.61295 4.95833 3.75C4.95833 2.88705 4.30542 2.1875 3.5 2.1875C2.69458 2.1875 2.04167 2.88705 2.04167 3.75C2.04167 4.61295 2.69458 5.3125 3.5 5.3125Z"
+              />
+            </svg>
+
+            <p>3932 S Perkins Memphis Tn, 38118</p>
+          </a>
+
+          <h2 class="mb-2 font-bold text-[var(--accent-color1)] text-lg mt-5">
+            Subscribe to Our Newsletter
+          </h2>
+          <p class="text-sm mb-2 font-semibold">
+            Get notified on the latest trends and updates in the world of beauty
+            and perfection.
+          </p>
+          <form
+            class="w-full flex items-center h-11 border-[1px] border-[var(--accent-color1])] overflow-hidden rounded-lg"
+          >
+            <input
+              type="email"
+              placeholder="Enter Email"
+              class="w-full h-full outline-none text-black px-2"
+            />
+            <button
+              class="cursor-pointer w-fit px-4 border-l-[1px] border-[var(--accent-color1])] bg-[var(--accent-color2)] h-full font-bold text-sm"
+            >
+              Send
+            </button>
+          </form>
+
+          <div class="mt-5 flex items-center gap-2">
+            <a
+              href="https://www.instagram.com/beautybarber_school/"
+              target="_blank"
+              class="flex items-center gap-1.5 text-sm"
+            >
+              <svg
+                width="15"
+                height="15"
+                viewBox="0 0 15 15"
+                class="size-8 bg-linear-[var(--footer-icons-gradient)] rounded-sm p-1.5 fill-[var(--accent-color2)]"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.50167 3.65419C5.3734 3.65419 3.65672 5.37125 3.65672 7.5C3.65672 9.62875 5.3734 11.3458 7.50167 11.3458C9.62995 11.3458 11.3466 9.62875 11.3466 7.5C11.3466 5.37125 9.62995 3.65419 7.50167 3.65419ZM7.50167 10.0003C6.12633 10.0003 5.00195 8.879 5.00195 7.5C5.00195 6.121 6.12298 4.99972 7.50167 4.99972C8.88037 4.99972 10.0014 6.121 10.0014 7.5C10.0014 8.879 8.87702 10.0003 7.50167 10.0003ZM12.4007 3.49688C12.4007 3.99559 11.9992 4.3939 11.5039 4.3939C11.0053 4.3939 10.6071 3.99225 10.6071 3.49688C10.6071 3.00151 11.0086 2.59985 11.5039 2.59985C11.9992 2.59985 12.4007 3.00151 12.4007 3.49688ZM14.9473 4.40729C14.8904 3.20568 14.616 2.1413 13.7359 1.26436C12.8592 0.387426 11.795 0.112964 10.5937 0.0527167C9.35555 -0.0175722 5.64445 -0.0175722 4.4063 0.0527167C3.20831 0.109617 2.14417 0.384079 1.26408 1.26102C0.383993 2.13796 0.112939 3.20233 0.052705 4.40394C-0.0175683 5.64236 -0.0175683 9.35429 0.052705 10.5927C0.109593 11.7943 0.383993 12.8587 1.26408 13.7356C2.14417 14.6126 3.20496 14.887 4.4063 14.9473C5.64445 15.0176 9.35555 15.0176 10.5937 14.9473C11.795 14.8904 12.8592 14.6159 13.7359 13.7356C14.6127 12.8587 14.8871 11.7943 14.9473 10.5927C15.0176 9.35429 15.0176 5.64571 14.9473 4.40729ZM13.3477 11.9215C13.0867 12.5775 12.5814 13.083 11.9222 13.3474C10.935 13.739 8.59258 13.6486 7.50167 13.6486C6.41076 13.6486 4.06497 13.7356 3.08115 13.3474C2.42526 13.0863 1.91997 12.5809 1.65561 11.9215C1.26408 10.9341 1.35443 8.59115 1.35443 7.5C1.35443 6.40885 1.26743 4.06253 1.65561 3.07849C1.91662 2.42246 2.42192 1.91705 3.08115 1.65263C4.06832 1.26102 6.41076 1.35139 7.50167 1.35139C8.59258 1.35139 10.9384 1.26436 11.9222 1.65263C12.5781 1.9137 13.0834 2.41911 13.3477 3.07849C13.7393 4.06588 13.6489 6.40885 13.6489 7.5C13.6489 8.59115 13.7393 10.9375 13.3477 11.9215Z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://www.facebook.com/people/Mid-South-Cosmetology-Barber-School/100088064304279/"
+              target="_blank"
+              class="flex items-center gap-1.5 text-sm"
+            >
+              <svg
+                width="8"
+                height="15"
+                viewBox="0 0 8 15"
+                class="size-8 bg-linear-[var(--footer-icons-gradient)] rounded-sm p-1.5 fill-[var(--accent-color2)]"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.47575 8.4375L7.8906 5.72285H5.29677V3.96123C5.29677 3.21855 5.65911 2.49463 6.8208 2.49463H8V0.183398C8 0.183398 6.92991 0 5.90679 0C3.7707 0 2.37444 1.3002 2.37444 3.65391V5.72285H0V8.4375H2.37444V15H5.29677V8.4375H7.47575Z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://www.facebook.com/people/Mid-South-Cosmetology-Barber-School/100088064304279/"
+              target="_blank"
+              class="flex items-center gap-1.5 text-sm"
+            >
+              <svg
+                width="15"
+                height="15"
+                viewBox="0 0 15 15"
+                class="size-8 bg-linear-[var(--footer-icons-gradient)] rounded-sm p-1.5 fill-[var(--accent-color2)]"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M3.35759 15H0.247768V4.98527H3.35759V15ZM1.801 3.61917C0.806585 3.61917 0 2.79549 0 1.80104C7.11763e-09 1.32338 0.189748 0.865275 0.527502 0.527514C0.865256 0.189752 1.32335 0 1.801 0C2.27866 0 2.73675 0.189752 3.07451 0.527514C3.41226 0.865275 3.60201 1.32338 3.60201 1.80104C3.60201 2.79549 2.79509 3.61917 1.801 3.61917ZM14.9967 15H11.8935V10.1249C11.8935 8.96303 11.8701 7.47305 10.2767 7.47305C8.65982 7.47305 8.41205 8.73535 8.41205 10.0412V15H5.30558V4.98527H8.28817V6.35137H8.3317C8.74687 5.56452 9.76105 4.73415 11.2741 4.73415C14.4214 4.73415 15 6.80674 15 9.49876V15H14.9967Z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://www.facebook.com/people/Mid-South-Cosmetology-Barber-School/100088064304279/"
+              target="_blank"
+              class="flex items-center gap-1.5 text-sm"
+            >
+              <svg
+                width="15"
+                height="15"
+                viewBox="0 0 15 15"
+                xmlns="http://www.w3.org/2000/svg"
+                class="size-8 bg-linear-[var(--footer-icons-gradient)] rounded-sm p-1.5 fill-[var(--accent-color2)]"
+              >
+                <path
+                  d="M8.92704 6.35148L14.5111 0H13.1879L8.33921 5.5149L4.4666 0H0L5.85615 8.3395L0 15H1.32333L6.44364 9.17608L10.5334 15H15L8.92671 6.35148H8.92704ZM7.11456 8.41297L6.52121 7.58255L1.80014 0.974755H3.83269L7.64265 6.30746L8.236 7.13788L13.1885 14.0696H11.156L7.11456 8.41329V8.41297Z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="text-base text-center py-1.5 mt-10 bg-[var(--accent-color2)] text-[var(--accent-color1)]"
+      >
+        <p class="w-[90%] mx-auto">
+          © 2025 | All Rights Reserved | Mid-South Beauty and Barbering Academy
+          (MSSBBA)
+        </p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
