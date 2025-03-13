@@ -5,20 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beauty</title>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <main>
       <section
-        class="banner relative h-[400px] relative after:opacity-[0.5] after:bg-linear-[var(--banner-gradient)] after:absolute after:inset-0 after:w-full after:h-full after:z-[2]"
+        class="banner relative h-[var(--banner-height-m)] md:h-[var(--banner-height-d)] relative after:opacity-[0.5] after:bg-linear-[var(--banner-gradient)] after:absolute after:inset-0 after:w-full after:h-full after:z-[2]"
       >
         <img
-          src="images/Banner.webp"
+          src="images/contact-banner.webp"
           alt="banner-img"
           class="w-full h-full object-cover"
         />
@@ -26,7 +21,7 @@
           class="absolute w-[90%] md:w-[45rem] top-1/2 z-[3] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white"
         >
           <h1 class="text-3xl md:text-5xl font-black mb-2 leading-[1.3]">
-            Our Services
+            Contact Us
           </h1>
           <span
             class="h-1 w-40 my-4 bg-[var(--accent-color2)] inline-block"
@@ -35,304 +30,214 @@
             <a href="index.html" class="underline text-[var(--accent-color2)]"
               >Home</a
             >
-            | Our Services
+            | Contact Us
           </p>
+        </div>
+      </section>
+      <section class="mt-12 w-[90%] xl:w-[85%] 2xl:w-[80%] mx-auto">
+        <div class="flex flex-col-reverse md:flex-row gap-10 lg:gap-20">
+          <div class="w-full md:w-2/5">
+            <a
+              href="tel:+19015297638"
+              target="_blank"
+              class="flex items-center py-3 px-5 border border-[var(--contact-input-border)] gap-4 text-base font-normal mb-2"
+            >
+              <span
+                class="size-8 rounded-xs p-[7px] inline bg-linear-[var(--footer-icons-gradient2)]"
+              >
+                <svg
+                  width="17"
+                  height="18"
+                  viewBox="0 0 17 18"
+                  fill="none"
+                  class="size-full"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.5152 12.7194L12.7964 11.0319C12.6375 10.9602 12.461 10.9451 12.2933 10.9889C12.1256 11.0326 11.9759 11.1329 11.8667 11.2745L10.2198 13.405C7.63511 12.1147 5.55505 9.91225 4.3364 7.17555L6.34855 5.43177C6.48258 5.31634 6.57745 5.15782 6.61879 4.9802C6.66013 4.80258 6.64569 4.61553 6.57765 4.44738L4.98388 0.509807C4.90921 0.328542 4.77714 0.180544 4.61045 0.0913347C4.44376 0.00212529 4.2529 -0.0227045 4.07077 0.0211269L0.617589 0.864892C0.441997 0.907825 0.285334 1.01251 0.173169 1.16186C0.0610036 1.3112 -4.04491e-05 1.4964 2.01088e-08 1.68721C2.01088e-08 10.7049 6.90305 18 15.4065 18C15.5868 18.0001 15.7618 17.9355 15.9029 17.8168C16.044 17.698 16.1429 17.5321 16.1835 17.3461L16.9804 13.6898C17.0215 13.496 16.9976 13.2931 16.9127 13.116C16.8277 12.9389 16.6872 12.7987 16.5152 12.7194Z"
+                    fill="#FFA648"
+                  />
+                </svg>
+              </span>
+              <p>+1 901-529-7638</p>
+            </a>
+            <a
+              href="tel:+19015297638"
+              target="_blank"
+              class="flex items-center py-3 px-5 border border-[var(--contact-input-border)] gap-4 text-base font-normal mb-2"
+            >
+              <span
+                class="size-8 rounded-xs p-[7px] inline bg-linear-[var(--footer-icons-gradient2)]"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  class="size-full"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0 2.75C0 2.02065 0.289731 1.32118 0.805456 0.805456C1.32118 0.289731 2.02065 0 2.75 0H16.75C17.4793 0 18.1788 0.289731 18.6945 0.805456C19.2103 1.32118 19.5 2.02065 19.5 2.75V12.75C19.5 13.4793 19.2103 14.1788 18.6945 14.6945C18.1788 15.2103 17.4793 15.5 16.75 15.5H5.711C5.331 15.5 4.972 15.673 4.735 15.97L2.405 18.883C1.607 19.879 0 19.316 0 18.04V2.75ZM4 9.75C4 9.55109 4.07902 9.36032 4.21967 9.21967C4.36032 9.07902 4.55109 9 4.75 9H14.75C14.9489 9 15.1397 9.07902 15.2803 9.21967C15.421 9.36032 15.5 9.55109 15.5 9.75C15.5 9.94891 15.421 10.1397 15.2803 10.2803C15.1397 10.421 14.9489 10.5 14.75 10.5H4.75C4.55109 10.5 4.36032 10.421 4.21967 10.2803C4.07902 10.1397 4 9.94891 4 9.75ZM4.75 5C4.55109 5 4.36032 5.07902 4.21967 5.21967C4.07902 5.36032 4 5.55109 4 5.75C4 5.94891 4.07902 6.13968 4.21967 6.28033C4.36032 6.42098 4.55109 6.5 4.75 6.5H10.75C10.9489 6.5 11.1397 6.42098 11.2803 6.28033C11.421 6.13968 11.5 5.94891 11.5 5.75C11.5 5.55109 11.421 5.36032 11.2803 5.21967C11.1397 5.07902 10.9489 5 10.75 5H4.75Z"
+                    fill="#FFA648"
+                  />
+                </svg>
+              </span>
+              <p>+1 901-529-7638</p>
+            </a>
+            <a
+              href="mailto:enroll@beautybarber.com"
+              target="_blank"
+              class="flex items-center py-3 px-5 border border-[var(--contact-input-border)] gap-4 text-base font-normal mb-2"
+            >
+              <span
+                class="size-8 rounded-xs p-[7px] inline bg-linear-[var(--footer-icons-gradient2)]"
+              >
+                <svg
+                  width="17"
+                  height="13"
+                  class="size-full"
+                  viewBox="0 0 17 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.6779 4.29271C16.8074 4.18776 17 4.28594 17 4.45182V11.375C17 12.2721 16.2861 13 15.4062 13H1.59375C0.713867 13 0 12.2721 0 11.375V4.45521C0 4.28594 0.189258 4.19115 0.32207 4.29609C1.06582 4.88516 2.05195 5.63333 5.43867 8.14193C6.13926 8.66328 7.32129 9.76016 8.5 9.75339C9.68535 9.76354 10.8906 8.64297 11.5646 8.14193C14.9514 5.63333 15.9342 4.88177 16.6779 4.29271ZM8.5 8.66667C9.27031 8.68021 10.3793 7.67813 10.9371 7.2651C15.3432 4.00495 15.6785 3.72057 16.6945 2.90807C16.8871 2.75573 17 2.51875 17 2.26823V1.625C17 0.727865 16.2861 0 15.4062 0H1.59375C0.713867 0 0 0.727865 0 1.625V2.26823C0 2.51875 0.112891 2.75234 0.305469 2.90807C1.32148 3.71719 1.65684 4.00495 6.06289 7.2651C6.6207 7.67813 7.72969 8.68021 8.5 8.66667Z"
+                    fill="#FFA648"
+                  />
+                </svg>
+              </span>
+              <p>enroll@beautybarber.com</p>
+            </a>
+            <a
+              href="https://maps.app.goo.gl/m1nmxJoBuTRQFgUb7"
+              target="_blank"
+              class="flex items-center py-3 px-5 border border-[var(--contact-input-border)] gap-4 text-base font-normal mb-2"
+            >
+              <span
+                class="size-8 rounded-xs p-[7px] inline bg-linear-[var(--footer-icons-gradient2)]"
+              >
+                <svg
+                  width="14"
+                  height="19"
+                  class="size-full"
+                  viewBox="0 0 14 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.2806 18.6167C0.983281 10.8 0 9.99775 0 7.125C0 3.18996 3.13399 0 7 0C10.866 0 14 3.18996 14 7.125C14 9.99775 13.0167 10.8 7.7194 18.6167C7.37177 19.1278 6.6282 19.1278 6.2806 18.6167ZM7 10.0937C8.61084 10.0937 9.91667 8.7646 9.91667 7.125C9.91667 5.4854 8.61084 4.15625 7 4.15625C5.38916 4.15625 4.08333 5.4854 4.08333 7.125C4.08333 8.7646 5.38916 10.0937 7 10.0937Z"
+                    fill="#FFA648"
+                  />
+                </svg>
+              </span>
+              <p>3932 S Perkins Memphis Tn, 38118</p>
+            </a>
+          </div>
+          <div class="w-full md:w-3/5">
+            <form class="w-full text-white rounded-lg">
+              <input
+                type="text"
+                required
+                placeholder="Name*"
+                class="w-full h-10 bg-[var(--contact-input-bg)] border border-[var(--contact-input-border)] text-base outline-none px-3 text-black mb-5"
+                />
+                <input
+                  type="email"
+                  required
+                  placeholder="Email*"
+                  class="w-full h-10 bg-[var(--contact-input-bg)] border border-[var(--contact-input-border)] text-base outline-none px-3 text-black mb-5"
+                />
+                <input
+                  type="text"
+                  required
+                  placeholder="Subject*"
+                  class="w-full h-10 bg-[var(--contact-input-bg)] border border-[var(--contact-input-border)] text-base outline-none px-3 text-black mb-5"
+                />
+              <textarea
+                placeholder="Message"
+                class="w-full min-h-20 h-30 max-h-60 py-2 bg-[var(--contact-input-bg)] border border-[var(--contact-input-border)] text-base outline-none px-3 text-black"
+              ></textarea>
+              <button class="button-primary w-fit mt-5 cursor-pointer">
+                Submit Now
+              </button>
+            </form>
+          </div>
         </div>
       </section>
       <section class="mt-12 md:mt-20 w-[90%] xl:w-[85%] 2xl:w-[80%] mx-auto">
         <h2
           class="text-3xl md:text-4xl font-extrabold text-center text-[var(--accent-color1)]"
         >
-          What We're Offering
+          Opening Hours
         </h2>
 
         <span
           class="h-1 w-40 my-8 bg-[var(--accent-color2)] block mx-auto"
         ></span>
 
-        <div class="grid md:grid-cols-2 gap-15 2xl:gap-20">
-          <table class="w-full border-collapse">
-            <thead>
-              <tr class="border-b-2 border-black">
-                <th class="text-left font-black pb-2 text-2xl">CUTTING</th>
-                <th class="text-right font-black pb-2 text-base">Min</th>
-                <th class="text-right font-black pb-2 text-base">Max</th>
-              </tr>
-            </thead>
-            <tbody class="text-base font-medium">
-              <tr class="h-2"></tr>
-              <tr class="h-9">
-                <td>Cut and Curl</td>
-                <td class="text-right">$12</td>
-                <td class="text-right">$17</td>
-              </tr>
-              <tr class="h-9">
-                <td>Haircut Add-on</td>
-                <td class="text-right">$10</td>
-                <td class="text-right">$15</td>
-              </tr>
-              <tr class="h-9">
-                <td>Shampoo, Blow-dry, Iron</td>
-                <td class="text-right">$30</td>
-                <td class="text-right">$35</td>
-              </tr>
-              <tr class="h-9">
-                <td>Blow Out</td>
-                <td class="text-right">$20</td>
-                <td class="text-right">$25</td>
-              </tr>
-              <tr class="h-9">
-                <td>Iron Add-on</td>
-                <td class="text-right">$5</td>
-                <td class="text-right">$5</td>
-              </tr>
-              <tr class="h-9">
-                <td>Style</td>
-                <td class="text-right">$25</td>
-                <td class="text-right">$30</td>
-              </tr>
-              <tr class="h-9">
-                <td>Braids/Dreads/Twist</td>
-                <td class="text-right">$25</td>
-                <td class="text-right">$25</td>
-              </tr>
-            </tbody>
-          </table>
-          <table class="w-full border-collapse">
-            <thead>
-              <tr class="border-b-2 border-black">
-                <th class="text-left font-black pb-2 text-2xl">COLOR BAR</th>
-                <th class="text-right font-black pb-2 text-base">Min</th>
-                <th class="text-right font-black pb-2 text-base">Max</th>
-              </tr>
-            </thead>
-            <tbody class="text-base font-medium">
-              <tr class="h-2"></tr>
-              <tr class="h-9">
-                <td>Basic Color + Foil Work</td>
-                <td class="text-right">$55</td>
-                <td class="text-right">$60</td>
-              </tr>
-              <tr class="h-9">
-                <td>Basic Color / Pm Shnes</td>
-                <td class="text-right">$25</td>
-                <td class="text-right">$30</td>
-              </tr>
-              <tr class="h-9">
-                <td>Partial Highlight - 10 Foils</td>
-                <td class="text-right">$20</td>
-                <td class="text-right">$25</td>
-              </tr>
-              <tr class="h-9">
-                <td>Full Highlight - 11+ Foils</td>
-                <td class="text-right">$30</td>
-                <td class="text-right">$35</td>
-              </tr>
-              <tr class="h-9">
-                <td>Block/Dimensional</td>
-                <td class="text-right">$45</td>
-                <td class="text-right">$45</td>
-              </tr>
-              <tr class="h-9">
-                <td>Full Head Lightener</td>
-                <td class="text-right">$30</td>
-                <td class="text-right">$35</td>
-              </tr>
-              <tr class="h-9">
-                <td>Color Correction</td>
-                <td class="text-right">$27</td>
-                <td class="text-right">$32</td>
-              </tr>
-              <tr class="h-9">
-                <td>Tint Retouch</td>
-                <td class="text-right">$20</td>
-                <td class="text-right">$25</td>
-              </tr>
-            </tbody>
-          </table>
-          <table class="w-full border-collapse">
-            <thead>
-              <tr class="border-b-2 border-black">
-                <th class="text-left font-black pb-2 text-2xl">
-                  SKIN SERVICES
-                </th>
-                <th class="text-right font-black pb-2 text-base">Phase One</th>
-              </tr>
-            </thead>
-            <tbody class="text-base font-medium">
-              <tr class="h-9">
-                <td>Basic Facial</td>
-                <td class="text-right">$30</td>
-              </tr>
-              <tr class="h-9">
-                <td>Signature Facial</td>
-                <td class="text-right">$50</td>
-              </tr>
-              <tr class="h-9">
-                <td>Basic Back Facial</td>
-                <td class="text-right">$35</td>
-              </tr>
-              <tr class="h-9">
-                <td>Signature Back Facial</td>
-                <td class="text-right">$50</td>
-              </tr>
-              <tr class="h-9">
-                <td>Chemical Peel</td>
-                <td class="text-right">$40</td>
-              </tr>
-              <tr class="h-9">
-                <td>Microdermabrasion</td>
-                <td class="text-right">$45</td>
-              </tr>
-              <tr class="h-9">
-                <td>Advance Exfoliant Add-on</td>
-                <td class="text-right">$5</td>
-              </tr>
-              <tr class="h-9">
-                <td>Hand Rescue Add-on</td>
-                <td class="text-right">$10</td>
-              </tr>
-            </tbody>
-          </table>
-          <table class="w-full border-collapse">
-            <thead>
-              <tr class="border-b-2 border-black">
-                <th class="text-left font-black pb-2 text-2xl">
-                  MAKEUP SERVICES
-                </th>
-                <th class="text-right font-black pb-2 text-base">Phase One</th>
-              </tr>
-            </thead>
-            <tbody class="text-base font-medium">
-              <tr class="h-9">
-                <td>Makeup</td>
-                <td class="text-right">$50</td>
-              </tr>
-              <tr class="h-9">
-                <td>Eyelash Tinting</td>
-                <td class="text-right">$10</td>
-              </tr>
-              <tr class="h-9">
-                <td>Eyebrow Tinting</td>
-                <td class="text-right">$7</td>
-              </tr>
-              <tr class="h-9">
-                <td>Strip Lashes</td>
-                <td class="text-right">$8</td>
-              </tr>
-              <tr class="h-9">
-                <td>Tab Lashes</td>
-                <td class="text-right">$7</td>
-              </tr>
-              <tr class="h-9">
-                <td>Eyebrow Laminate</td>
-                <td class="text-right">$45</td>
-              </tr>
-              <tr class="h-9">
-                <td>Lash Lift</td>
-                <td class="text-right">$45</td>
-              </tr>
-            </tbody>
-          </table>
-          <table class="w-full border-collapse">
-            <thead>
-              <tr class="border-b-2 border-black">
-                <th class="text-left font-black pb-2 text-2xl">
-                  WAXING SERVICES
-                </th>
-                <th class="text-right font-black pb-2 text-base">Phase One</th>
-              </tr>
-            </thead>
-            <tbody class="text-base font-medium">
-              <tr class="h-9">
-                <td>Brow Wax With Design</td>
-                <td class="text-right">$10</td>
-              </tr>
-              <tr class="h-9">
-                <td>Lip Wax</td>
-                <td class="text-right">$7</td>
-              </tr>
-              <tr class="h-9">
-                <td>Chin Wax</td>
-                <td class="text-right">$7</td>
-              </tr>
-              <tr class="h-9">
-                <td>Cheek Wax</td>
-                <td class="text-right">$7</td>
-              </tr>
-              <tr class="h-9">
-                <td>Full Face Wax</td>
-                <td class="text-right">$25</td>
-              </tr>
-              <tr class="h-9">
-                <td>1/2 Arm Wax</td>
-                <td class="text-right">$15</td>
-              </tr>
-              <tr class="h-9">
-                <td>Full Arm Wax</td>
-                <td class="text-right">$30</td>
-              </tr>
-              <tr class="h-9">
-                <td>Under Arm Wax</td>
-                <td class="text-right">$15</td>
-              </tr>
-              <tr class="h-9">
-                <td>1/2 Leg Wax</td>
-                <td class="text-right">$25</td>
-              </tr>
-              <tr class="h-9">
-                <td>Full Leg Wax</td>
-                <td class="text-right">$35</td>
-              </tr>
-              <tr class="h-9">
-                <td>Back Or Chest Wax</td>
-                <td class="text-right">$35</td>
-              </tr>
-              <tr class="h-9">
-                <td>Stomach Wax</td>
-                <td class="text-right">$15</td>
-              </tr>
-              <tr class="h-9">
-                <td>Bikini Wax</td>
-                <td class="text-right">$2</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <p class="text-lg md:text-xl font-medium italic mx-auto mt-15">
-          All services performed by students under the supervision of a licensed
-          educator. If a correction is needed, please schedule an appointment
-          within one week of the original service. For safety reasons, children
-          are not permitted in the Student Salon unless receiving services.
-        </p>
-      </section>
-      <section
-        class="bg-[var(--accent-color1)] mx-auto w-[90%] lg:w-[50rem] px-5 py-10 text-white text-center my-15"
-      >
-        <h2 class="font-extrabold pb-2 text-2xl uppercase">
-          Book Your Service Today!
-        </h2>
-        <p
-          class="text-base font-normal md:text-lg md:w-[90%] lg:w-[65%] mx-auto mt-2"
-        >
-          Ready to book your eyelashes appointment in Memphis? Contact us today!
-          <span class="text-[var(--accent-color2)] font-semibold"
-            >Book an appointment online</span
-          >
-          or give us a call at
-          <a
-            href="tel:+19015297638"
-            class="font-semibold text-[var(--accent-color2)]"
-            >+1 901-529-7638.</a
-          >
-        </p>
-        <p class="text-base md:text-lg w-[18rem] mx-auto mt-5 font-normal">
-          <span class="font-bold block">Salon Hours:</span> Monday - Thursday
-          9AM – 9PM Friday - Saturday 9AM – 5PM Sunday - Closed
-        </p>
-        <a href="/" class="text-base button-primary uppercase mt-8"
-          >Book an APPOINTMENT</a
-        >
+        <table class="w-full border border-[var(--accent-color4)]">
+          <tbody class="text-base">
+            <tr class="border border-[var(--accent-color4)]">
+              <td
+                class="font-extrabold p-5 border-r border-[var(--accent-color4)]"
+              >
+                Monday
+              </td>
+              <td class="p-5">9:00 AM – 9:00 PM</td>
+            </tr>
+            <tr class="border border-[var(--accent-color4)]">
+              <td
+                class="font-extrabold p-5 border-r border-[var(--accent-color4)]"
+              >
+                Tuesday
+              </td>
+              <td class="p-5">9:00 AM – 9:00 PM</td>
+            </tr>
+            <tr class="border border-[var(--accent-color4)]">
+              <td
+                class="font-extrabold p-5 border-r border-[var(--accent-color4)]"
+              >
+                Wednesday
+              </td>
+              <td class="p-5">9:00 AM – 9:00 PM</td>
+            </tr>
+            <tr class="border border-[var(--accent-color4)]">
+              <td
+                class="font-extrabold p-5 border-r border-[var(--accent-color4)]"
+              >
+                Thursday
+              </td>
+              <td class="p-5">9:00 AM – 9:00 PM</td>
+            </tr>
+            <tr class="border border-[var(--accent-color4)]">
+              <td
+                class="font-extrabold p-5 border-r border-[var(--accent-color4)]"
+              >
+                Friday
+              </td>
+              <td class="p-5">9:00 AM – 5:00 PM</td>
+            </tr>
+            <tr class="border border-[var(--accent-color4)]">
+              <td
+                class="font-extrabold p-5 border-r border-[var(--accent-color4)]"
+              >
+                Saturday
+              </td>
+              <td class="p-5">9:00 AM – 5:00 PM</td>
+            </tr>
+            <tr class="border border-[var(--accent-color4)]">
+              <td
+                class="font-extrabold p-5 border-r border-[var(--accent-color4)]"
+              >
+                Sunday
+              </td>
+              <td class="p-5">Closed</td>
+            </tr>
+          </tbody>
+        </table>
       </section>
     </main>
     <script src="script.js"></script>
