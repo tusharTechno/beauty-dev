@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beauty</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section
+        class="banner relative h-[400px] relative after:opacity-[0.5] after:bg-linear-[var(--banner-gradient)] after:absolute after:inset-0 after:w-full after:h-full after:z-[2]"
+      >
+        <img
+          src="images/Banner.webp"
+          alt="banner-img"
+          class="w-full h-full object-cover"
+        />
+        <div
+          class="absolute w-[90%] md:w-[45rem] top-1/2 z-[3] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white"
+        >
+          <h1 class="text-3xl md:text-5xl font-black mb-2 leading-[1.3]">
+            Our Services
+          </h1>
+          <span
+            class="h-1 w-40 my-4 bg-[var(--accent-color2)] inline-block"
+          ></span>
+          <p class="text-lg md:text-xl font-medium">
+            <a href="index.html" class="underline text-[var(--accent-color2)]"
+              >Home</a
+            >
+            | Our Services
+          </p>
+        </div>
+      </section>
+      <section class="mt-12 md:mt-20 w-[90%] xl:w-[85%] 2xl:w-[80%] mx-auto">
+        <h2
+          class="text-3xl md:text-4xl font-extrabold text-center text-[var(--accent-color1)]"
+        >
+          What We're Offering
+        </h2>
+
+        <span
+          class="h-1 w-40 my-8 bg-[var(--accent-color2)] block mx-auto"
+        ></span>
+
+        <div class="grid md:grid-cols-2 gap-15 2xl:gap-20">
+          <table class="w-full border-collapse">
+            <thead>
+              <tr class="border-b-2 border-black">
+                <th class="text-left font-black pb-2 text-2xl">CUTTING</th>
+                <th class="text-right font-black pb-2 text-base">Min</th>
+                <th class="text-right font-black pb-2 text-base">Max</th>
+              </tr>
+            </thead>
+            <tbody class="text-base font-medium">
+              <tr class="h-2"></tr>
+              <tr class="h-9">
+                <td>Cut and Curl</td>
+                <td class="text-right">$12</td>
+                <td class="text-right">$17</td>
+              </tr>
+              <tr class="h-9">
+                <td>Haircut Add-on</td>
+                <td class="text-right">$10</td>
+                <td class="text-right">$15</td>
+              </tr>
+              <tr class="h-9">
+                <td>Shampoo, Blow-dry, Iron</td>
+                <td class="text-right">$30</td>
+                <td class="text-right">$35</td>
+              </tr>
+              <tr class="h-9">
+                <td>Blow Out</td>
+                <td class="text-right">$20</td>
+                <td class="text-right">$25</td>
+              </tr>
+              <tr class="h-9">
+                <td>Iron Add-on</td>
+                <td class="text-right">$5</td>
+                <td class="text-right">$5</td>
+              </tr>
+              <tr class="h-9">
+                <td>Style</td>
+                <td class="text-right">$25</td>
+                <td class="text-right">$30</td>
+              </tr>
+              <tr class="h-9">
+                <td>Braids/Dreads/Twist</td>
+                <td class="text-right">$25</td>
+                <td class="text-right">$25</td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="w-full border-collapse">
+            <thead>
+              <tr class="border-b-2 border-black">
+                <th class="text-left font-black pb-2 text-2xl">COLOR BAR</th>
+                <th class="text-right font-black pb-2 text-base">Min</th>
+                <th class="text-right font-black pb-2 text-base">Max</th>
+              </tr>
+            </thead>
+            <tbody class="text-base font-medium">
+              <tr class="h-2"></tr>
+              <tr class="h-9">
+                <td>Basic Color + Foil Work</td>
+                <td class="text-right">$55</td>
+                <td class="text-right">$60</td>
+              </tr>
+              <tr class="h-9">
+                <td>Basic Color / Pm Shnes</td>
+                <td class="text-right">$25</td>
+                <td class="text-right">$30</td>
+              </tr>
+              <tr class="h-9">
+                <td>Partial Highlight - 10 Foils</td>
+                <td class="text-right">$20</td>
+                <td class="text-right">$25</td>
+              </tr>
+              <tr class="h-9">
+                <td>Full Highlight - 11+ Foils</td>
+                <td class="text-right">$30</td>
+                <td class="text-right">$35</td>
+              </tr>
+              <tr class="h-9">
+                <td>Block/Dimensional</td>
+                <td class="text-right">$45</td>
+                <td class="text-right">$45</td>
+              </tr>
+              <tr class="h-9">
+                <td>Full Head Lightener</td>
+                <td class="text-right">$30</td>
+                <td class="text-right">$35</td>
+              </tr>
+              <tr class="h-9">
+                <td>Color Correction</td>
+                <td class="text-right">$27</td>
+                <td class="text-right">$32</td>
+              </tr>
+              <tr class="h-9">
+                <td>Tint Retouch</td>
+                <td class="text-right">$20</td>
+                <td class="text-right">$25</td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="w-full border-collapse">
+            <thead>
+              <tr class="border-b-2 border-black">
+                <th class="text-left font-black pb-2 text-2xl">
+                  SKIN SERVICES
+                </th>
+                <th class="text-right font-black pb-2 text-base">Phase One</th>
+              </tr>
+            </thead>
+            <tbody class="text-base font-medium">
+              <tr class="h-9">
+                <td>Basic Facial</td>
+                <td class="text-right">$30</td>
+              </tr>
+              <tr class="h-9">
+                <td>Signature Facial</td>
+                <td class="text-right">$50</td>
+              </tr>
+              <tr class="h-9">
+                <td>Basic Back Facial</td>
+                <td class="text-right">$35</td>
+              </tr>
+              <tr class="h-9">
+                <td>Signature Back Facial</td>
+                <td class="text-right">$50</td>
+              </tr>
+              <tr class="h-9">
+                <td>Chemical Peel</td>
+                <td class="text-right">$40</td>
+              </tr>
+              <tr class="h-9">
+                <td>Microdermabrasion</td>
+                <td class="text-right">$45</td>
+              </tr>
+              <tr class="h-9">
+                <td>Advance Exfoliant Add-on</td>
+                <td class="text-right">$5</td>
+              </tr>
+              <tr class="h-9">
+                <td>Hand Rescue Add-on</td>
+                <td class="text-right">$10</td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="w-full border-collapse">
+            <thead>
+              <tr class="border-b-2 border-black">
+                <th class="text-left font-black pb-2 text-2xl">
+                  MAKEUP SERVICES
+                </th>
+                <th class="text-right font-black pb-2 text-base">Phase One</th>
+              </tr>
+            </thead>
+            <tbody class="text-base font-medium">
+              <tr class="h-9">
+                <td>Makeup</td>
+                <td class="text-right">$50</td>
+              </tr>
+              <tr class="h-9">
+                <td>Eyelash Tinting</td>
+                <td class="text-right">$10</td>
+              </tr>
+              <tr class="h-9">
+                <td>Eyebrow Tinting</td>
+                <td class="text-right">$7</td>
+              </tr>
+              <tr class="h-9">
+                <td>Strip Lashes</td>
+                <td class="text-right">$8</td>
+              </tr>
+              <tr class="h-9">
+                <td>Tab Lashes</td>
+                <td class="text-right">$7</td>
+              </tr>
+              <tr class="h-9">
+                <td>Eyebrow Laminate</td>
+                <td class="text-right">$45</td>
+              </tr>
+              <tr class="h-9">
+                <td>Lash Lift</td>
+                <td class="text-right">$45</td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="w-full border-collapse">
+            <thead>
+              <tr class="border-b-2 border-black">
+                <th class="text-left font-black pb-2 text-2xl">
+                  WAXING SERVICES
+                </th>
+                <th class="text-right font-black pb-2 text-base">Phase One</th>
+              </tr>
+            </thead>
+            <tbody class="text-base font-medium">
+              <tr class="h-9">
+                <td>Brow Wax With Design</td>
+                <td class="text-right">$10</td>
+              </tr>
+              <tr class="h-9">
+                <td>Lip Wax</td>
+                <td class="text-right">$7</td>
+              </tr>
+              <tr class="h-9">
+                <td>Chin Wax</td>
+                <td class="text-right">$7</td>
+              </tr>
+              <tr class="h-9">
+                <td>Cheek Wax</td>
+                <td class="text-right">$7</td>
+              </tr>
+              <tr class="h-9">
+                <td>Full Face Wax</td>
+                <td class="text-right">$25</td>
+              </tr>
+              <tr class="h-9">
+                <td>1/2 Arm Wax</td>
+                <td class="text-right">$15</td>
+              </tr>
+              <tr class="h-9">
+                <td>Full Arm Wax</td>
+                <td class="text-right">$30</td>
+              </tr>
+              <tr class="h-9">
+                <td>Under Arm Wax</td>
+                <td class="text-right">$15</td>
+              </tr>
+              <tr class="h-9">
+                <td>1/2 Leg Wax</td>
+                <td class="text-right">$25</td>
+              </tr>
+              <tr class="h-9">
+                <td>Full Leg Wax</td>
+                <td class="text-right">$35</td>
+              </tr>
+              <tr class="h-9">
+                <td>Back Or Chest Wax</td>
+                <td class="text-right">$35</td>
+              </tr>
+              <tr class="h-9">
+                <td>Stomach Wax</td>
+                <td class="text-right">$15</td>
+              </tr>
+              <tr class="h-9">
+                <td>Bikini Wax</td>
+                <td class="text-right">$2</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="text-lg md:text-xl font-medium italic mx-auto mt-15">
+          All services performed by students under the supervision of a licensed
+          educator. If a correction is needed, please schedule an appointment
+          within one week of the original service. For safety reasons, children
+          are not permitted in the Student Salon unless receiving services.
+        </p>
+      </section>
+      <section
+        class="bg-[var(--accent-color1)] mx-auto w-[90%] lg:w-[50rem] px-5 py-10 text-white text-center my-15"
+      >
+        <h2 class="font-extrabold pb-2 text-2xl uppercase">
+          Book Your Service Today!
+        </h2>
+        <p
+          class="text-base font-normal md:text-lg md:w-[90%] lg:w-[65%] mx-auto mt-2"
+        >
+          Ready to book your eyelashes appointment in Memphis? Contact us today!
+          <span class="text-[var(--accent-color2)] font-semibold">Book an appointment online</span> or give us a call at
+            <a href="tel:+19015297638" class="font-semibold text-[var(--accent-color2)]">+1 901-529-7638.</a>
+          
+        </p>
+        <p class="text-base md:text-lg w-[18rem] mx-auto mt-5 font-normal">
+          <span class="font-bold block">Salon Hours:</span> Monday - Thursday
+          9AM – 9PM Friday - Saturday 9AM – 5PM Sunday - Closed
+        </p>
+        <a href="/" class="text-base button-primary uppercase mt-8"
+          >Book an APPOINTMENT</a
+        >
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

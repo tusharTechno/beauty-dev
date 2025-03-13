@@ -1,13 +1,19 @@
 :root {
-  --accent-color1: #003177;
+  --accent-color1: #012463;
+  --accent-color3:#D8ECFE;
   --accent-color2: #ffa648;
   --color-black: #101010;
+  --gray-border-color: #9c9c9c;
   --banner-gradient: 90deg, #004cd1 0%, #000000 53%, #ffa438 100%;
-  --card-gradient:180deg, rgba(255,167,83,0.17) 0%, rgba(0,49,119,0.68) 77%;
-  --review-card-gradient: 0deg, rgba(255,255,255,1) 50%, rgb(161, 189, 238) 98%;
+  --card-gradient: 180deg, rgba(255, 167, 83, 0.17) 0%,
+    rgba(0, 49, 119, 0.68) 77%;
+  --review-card-gradient: 0deg, rgba(255, 255, 255, 1) 50%,
+    rgb(161, 189, 238) 98%;
   --review-gradient: to right, #004ab5 0%, #012463 100%;
-  --footer-gradient: 0deg, rgba(1,36,99,1) 0%, rgba(0,49,119,1) 100%;
-  --footer-icons-gradient:45deg, rgba(1,68,165,1) 0%, rgba(0,26,63,1) 100%;
+  --footer-gradient: 0deg, rgba(1, 36, 99, 1) 0%, rgba(0, 49, 119, 1) 100%;
+  --footer-icons-gradient: 45deg, rgba(1, 68, 165, 1) 0%,
+    rgba(0, 26, 63, 1) 100%;
+  --page-image-gradient:45deg, rgba(255,167,83,0.25) 0%, rgba(0,76,209,0.25) 100%;
 }
 
 body {
@@ -204,18 +210,24 @@ body {
   color: #fff;
 }
 
+.button-secondary {
+  background:linear-gradient(var(--footer-icons-gradient));
+  border-radius: 8px;
+  padding: 10px 50px;
+  display: inline-block;
+  font-weight: 600;
+  color: #fff;
+}
 
 .swiper-button-next,
 .swiper-button-prev {
-  color: white !important; 
+  color: white !important;
 }
-
 
 .swiper-button-next:after,
 .swiper-button-prev:after {
-    display:none !important;
+  display: none !important;
 }
-
 
 .hamburgers {
   justify-content: center;

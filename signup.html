@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body
+    class="bg-[var(--accent-color1)] w-full min-h-screen relative grid place-items-center"
+  >
+    <img
+      src="images/bg-pattern.webp"
+      alt="background-pattern"
+      class="w-full h-full absolute left-0 top-0 object-cover z-[-1]"
+    />
+    <div
+      class="bg-white relative overflow-hidden w-[90%] md:w-96 grid place-items-center px-10 pt-8 pb-18 rounded-3xl"
+    >
+      <a href="/index.html" class="w-fit mb-5">
+        <img
+          src="images/logo.svg"
+          alt="brand-logo"
+          class="w-18 md:w-20 h-auto"
+        />
+      </a>
+      <h1 class="text-xl font-bold text-left text-black w-full mb-4">Signup</h1>
+      <form class="w-full">
+        <input
+          type="text"
+          required
+          placeholder="Name*"
+          class="w-full h-10 border-[1px] rounded-md outline-[var(--accent-color1)] border-[var(--gray-border-color)] bg-white text-base px-3 text-black mb-5"
+        />
+        <input
+          type="email"
+          required
+          placeholder="Email*"
+          class="w-full h-10 border-[1px] rounded-md outline-[var(--accent-color1)] border-[var(--gray-border-color)] bg-white text-base px-3 text-black mb-5"
+        />
+        <div class="relative w-full mb-5">
+          <input
+            type="password"
+            required
+            placeholder="Password*"
+            class="password-input w-full h-10 border-[1px] rounded-md outline-[var(--accent-color1)] border-[var(--gray-border-color)] bg-white text-base px-3 text-black"
+          />
+          <button
+            type="button"
+            class="absolute eye-button cursor-pointer inset-y-0 right-0 px-3 flex items-center text-gray-600"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              class="size-5 bg-white eye-icon"
+              fill="#9C9C9C"
+              data-show="false"
+            >
+              <path
+                d="M1.18164 12C2.12215 6.87976 6.60812 3 12.0003 3C17.3924 3 21.8784 6.87976 22.8189 12C21.8784 17.1202 17.3924 21 12.0003 21C6.60812 21 2.12215 17.1202 1.18164 12ZM12.0003 17C14.7617 17 17.0003 14.7614 17.0003 12C17.0003 9.23858 14.7617 7 12.0003 7C9.23884 7 7.00026 9.23858 7.00026 12C7.00026 14.7614 9.23884 17 12.0003 17ZM12.0003 15C10.3434 15 9.00026 13.6569 9.00026 12C9.00026 10.3431 10.3434 9 12.0003 9C13.6571 9 15.0003 10.3431 15.0003 12C15.0003 13.6569 13.6571 15 12.0003 15Z"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="relative w-full h-10 mb-3">
+          <select
+            class="w-full appearance-none cursor-pointer h-full border-[1px] rounded-md outline-[var(--accent-color1)] border-[var(--gray-border-color)] bg-white text-base px-3 text-black pr-10"
+          >
+            <option class="cursor-pointer" selected disabled>Gender</option>
+            <option value="male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+          <span
+            class="absolute inline-block z-[5] bg-white size-7 right-3 top-1/2 -translate-y-1/2 pointer-events-none"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="#9C9C9C"
+            >
+              <path
+                d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"
+              ></path>
+            </svg>
+          </span>
+        </div>
+
+        <div class="flex items-center text-sm gap-2">
+          <input
+            type="checkbox"
+            class="size-4 cursor-pointer text-blue-600 rounded-xl border-gray-300 focus:ring-blue-500"
+          />
+          <p>I agree to this terms & Conditions</p>
+        </div>
+
+        <button
+          class="cursor-pointer button-secondary w-fit !text-white mt-5 !block mx-auto"
+        >
+          Create Your Account
+        </button>
+      </form>
+      <p class="text-base font-light text-center mt-5">
+        Already have an account?
+        <a class="underline font-medium" href="/login.html">Login</a>
+      </p>
+      <p
+        class="text-xs text-center py-3 px-11 md:px-2 text-[var(--accent-color1)] w-full bg-[var(--accent-color3)] absolute bottom-0 left-0 font-medium text-center mt-5"
+      >
+        © 2025 | All Rights Reserved |
+        <a href="#" class="underline">Terms of service</a> |
+        <a href="#" class="underline">Privacy policy</a>
+      </p>
+    </div>
+    <script>
+      document.querySelector(".eye-button").addEventListener("click", () => {
+        const icon = document.querySelector(".eye-icon");
+        const passInput = document.querySelector(".password-input");
+        if (icon.dataset.show === "false") {
+          icon.dataset.show = true;
+          passInput.type = "text";
+          icon.innerHTML = `<path
+      d="M4.52 5.93L1.39 2.80L2.80 1.39L22.60 21.19L21.19 22.60L17.88 19.29C16.18 20.37 14.16 21.00 12.00 21.00C6.60 21.00 2.12 17.12 1.18 12.00C1.61 9.62 2.81 7.51 4.52 5.93ZM14.75 16.17L13.29 14.70C12.90 14.89 12.46 15.00 12.00 15.00C10.34 15.00 9.00 13.65 9.00 12.00C9.00 11.53 9.10 11.09 9.29 10.70L7.82 9.24C7.30 10.03 7.00 10.98 7.00 12.00C7.00 14.76 9.23 17.00 12.00 17.00C13.01 17.00 13.96 16.69 14.75 16.17ZM7.97 3.76C9.22 3.26 10.57 3.00 12.00 3.00C17.39 3.00 21.87 6.87 22.81 12.00C22.50 13.69 21.80 15.26 20.80 16.59L16.94 12.73C16.98 12.49 17.00 12.24 17.00 12.00C17.00 9.23 14.76 7.00 12.00 7.00C11.75 7.00 11.50 7.01 11.26 7.05L7.97 3.76Z"
+    />`;
+        } else {
+          passInput.type = "password";
+          icon.dataset.show = false;
+          icon.innerHTML = ` <path
+                d="M1.18164 12C2.12215 6.87976 6.60812 3 12.0003 3C17.3924 3 21.8784 6.87976 22.8189 12C21.8784 17.1202 17.3924 21 12.0003 21C6.60812 21 2.12215 17.1202 1.18164 12ZM12.0003 17C14.7617 17 17.0003 14.7614 17.0003 12C17.0003 9.23858 14.7617 7 12.0003 7C9.23884 7 7.00026 9.23858 7.00026 12C7.00026 14.7614 9.23884 17 12.0003 17ZM12.0003 15C10.3434 15 9.00026 13.6569 9.00026 12C9.00026 10.3431 10.3434 9 12.0003 9C13.6571 9 15.0003 10.3431 15.0003 12C15.0003 13.6569 13.6571 15 12.0003 15Z"
+              />`;
+        }
+      });
+    </script>
+  </body>
+</html>

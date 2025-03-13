@@ -42,7 +42,6 @@ let swiper = new Swiper(".testimonials-slider", {
   },
 });
 
-
 document.querySelector(".hamburgers").addEventListener("touchstart", () => {
   const ele = document.querySelector(".navlinks");
   ele.classList.toggle("h-[calc(100vh_-_77.95px)]");
@@ -51,7 +50,6 @@ document.querySelector(".hamburgers").addEventListener("touchstart", () => {
   ele.classList.remove("overflow-hidden");
   ele.classList.add("overflow-y-scroll");
 });
-
 
 document.querySelector(".submenu-toggle").addEventListener("touchstart", () => {
   const ele = document.querySelector(".submenu");
