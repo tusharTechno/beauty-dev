@@ -4,9 +4,9 @@
   --accent-color2: #ffa648;
   --accent-color4: #004cd1;
   --color-black: #101010;
-  --section-bg:#F3F4FA;
-  --contact-input-bg:#F3F3F3;
-  --contact-input-border:#CBCBCB;
+  --section-bg: #f3f4fa;
+  --contact-input-bg: #f3f3f3;
+  --contact-input-border: #cbcbcb;
   --gray-border-color: #9c9c9c;
   --banner-gradient: 90deg, #004cd1 0%, #000000 53%, #ffa438 100%;
   --card-gradient: 180deg, rgba(255, 167, 83, 0.17) 0%,
@@ -17,21 +17,18 @@
   --footer-gradient: 0deg, rgba(1, 36, 99, 1) 0%, rgba(0, 49, 119, 1) 100%;
   --footer-icons-gradient: 45deg, rgba(1, 68, 165, 1) 0%,
     rgba(0, 26, 63, 1) 100%;
-  --footer-icons-gradient2: 0deg, rgba(0,91,221,1) 0%, rgba(0,49,119,1) 100%;
+  --footer-icons-gradient2: 0deg, rgba(0, 91, 221, 1) 0%,
+    rgba(0, 49, 119, 1) 100%;
   --page-image-gradient: 45deg, rgba(255, 167, 83, 0.25) 0%,
     rgba(0, 76, 209, 0.25) 100%;
-  --banner-height-d:400px;
-  --banner-height-m:250px;
+  --banner-height-d: 400px;
+  --banner-height-m: 250px;
 }
-
-
 
 body {
   width: 100%;
   font-family: Gilroy;
 }
-
-
 
 @font-face {
   font-family: "Gilroy";
@@ -42,8 +39,6 @@ body {
   font-display: swap;
 }
 
-
-
 @font-face {
   font-family: "Gilroy";
   src: local("Gilroy-ExtraBold"), local("Gilroy-ExtraBold"),
@@ -53,7 +48,6 @@ body {
   font-display: swap;
 }
 
-
 @font-face {
   font-family: "Gilroy";
   src: local("Gilroy-Bold"), local("Gilroy-Bold"),
@@ -62,8 +56,6 @@ body {
   font-style: normal;
   font-display: swap;
 }
-
-
 
 @font-face {
   font-family: "Gilroy";
@@ -100,8 +92,6 @@ body {
   font-style: normal;
   font-display: swap;
 }
-
-
 
 .button-primary {
   background: var(--accent-color2);
