@@ -25,11 +25,11 @@ let swiper = new Swiper(".testimonials-slider", {
       loop: true,
     },
     768: {
-      slidesPerView: 1.5,
+      slidesPerView: 1.2,
       spaceBetween: 10,
-      centeredSlides: false,
+      centeredSlides: true,
     },
-    1024: {
+    1000: {
       slidesPerView: 2,
       spaceBetween: 10,
       centeredSlides: false,
