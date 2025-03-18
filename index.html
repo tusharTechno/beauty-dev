@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beauty</title>
     <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -146,14 +146,14 @@
 
             <span class="hidden lg:inline">LOGIN</span>
           </a>
-          <div class="hamburgers md:hidden">
+          <button class="hamburgers md:hidden">
             <label class="hamburger">
               <input type="checkbox" />
               <span class="bar"></span>
               <span class="bar"></span>
               <span class="bar"></span>
             </label>
-          </div>
+          </button>
         </div>
       </div>
     </nav>
@@ -164,7 +164,7 @@
         <img
           src="images/Banner.webp"
           alt="banner-img"
-          class="w-full h-full object-cover"
+          class="w-full h-full object-end md:object-top object-cover"
         />
         <div
           class="absolute w-[90%] md:w-[45rem] top-1/2 z-[3] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white"
@@ -546,14 +546,14 @@
           class="h-1 w-40 my-5 bg-[var(--accent-color2)] block mx-auto"
         ></span>
         <div
-          class="flex items-center flex-wrap gap-12 md:gap-10 w-[90%] mx-auto mt-5 justify-center lg:justify-between"
+          class="flex items-center flex-wrap gap-12 md:gap-5 w-[90%] mx-auto mt-5 justify-center lg:justify-between"
         >
-          <img class="min-w-30 w-[10%] h-auto" src="images/brands/logo1.webp" />
-          <img class="min-w-30 w-[10%] h-auto" src="images/brands/logo2.webp" />
-          <img class="min-w-30 w-[10%] h-auto" src="images/brands/logo3.webp" />
-          <img class="min-w-30 w-[10%] h-auto" src="images/brands/logo4.webp" />
-          <img class="min-w-30 w-[10%] h-auto" src="images/brands/logo5.webp" />
-          <img class="min-w-30 w-[10%] h-auto" src="images/brands/logo6.webp" />
+          <img class="min-w-30 w-[12%] h-auto" src="images/brands/logo1.webp" />
+          <img class="min-w-40 w-[18%] h-auto" src="images/brands/logo2.webp" />
+          <img class="min-w-30 w-[12%] h-auto" src="images/brands/logo3.webp" />
+          <img class="min-w-30 w-[12%] h-auto" src="images/brands/logo4.webp" />
+          <img class="min-w-30 w-[12%] h-auto" src="images/brands/logo5.webp" />
+          <img class="min-w-30 w-[12%] h-auto" src="images/brands/logo6.webp" />
         </div>
 
         <div
@@ -599,10 +599,9 @@
               details and to book an appointment 
             </p>
           </div>
-          <div
-            class="mx-auto w-[90%] gap-5 pt-50 md:pt-30 pb-10 flex flex-col md:flex-row items-stratch"
+          <div class="mx-auto w-[90%] gap-5 pt-43 lg:pt-30 pb-10 flex flex-col md:flex-row items-stratch"
           >
-            <div class="w-full md:w-2/3">
+            <div class="w-full md:w-1/2 lg:w-2/3">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6533.169968705248!2d-89.908744!3d35.042111!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x887f85f45655caa7%3A0x4cf52e5c95d90060!2s3932%20S%20Perkins%20Rd%2C%20Memphis%2C%20TN%2038118!5e0!3m2!1sen!2sus!4v1741607062868!5m2!1sen!2sus"
                 class="w-full h-80 md:h-full rounded-lg overflow-hidden"
@@ -612,7 +611,7 @@
                 referrerpolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
-            <div class="w-full md:w-1/3">
+            <div class="w-full md:w-1/2 lg:w-1/3">
               <form
                 class="h-full w-full bg-[var(--accent-color1)] text-white px-5 py-7 rounded-lg"
               >
@@ -623,12 +622,26 @@
                   placeholder="Full Name*"
                   class="w-full h-10 bg-white text-base outline-none px-3 text-black mb-5"
                 />
-                <input
-                  type="tel"
-                  required
-                  placeholder="Phone No*"
-                  class="w-full h-10 bg-white text-base outline-none px-3 text-black mb-5"
-                />
+                <div
+                  class="flex h-10 items-center border border-gray-300 w-full mb-5"
+                >
+                  <select
+                    class="bg-gray-200 w-18 cursor-pointer text-black px-1 h-full outline-none"
+                  >
+                    <option value="+91">+91</option>
+                    <option value="+1">+1</option>
+                    <option value="+44">+44</option>
+                    <option value="+61">+61</option>
+                    <option value="+971">+971</option>
+                  </select>
+                  <input
+                    type="tel"
+                    required
+                    placeholder="Phone No*"
+                    class="w-full h-10 bg-white text-base outline-none px-3 text-black"
+                  />
+                </div>
+
                 <input
                   type="email"
                   required
@@ -656,12 +669,11 @@
           </div>
         </div>
       </section>
-
       <section class="instagrid grid grid-cols-2 lg:grid-cols-4 mt-5">
-          <img src="images/insta-1.webp" alt="feed-img" class="w-full">
-          <img src="images/insta-2.webp" alt="feed-img" class="w-full">
-          <img src="images/insta-3.webp" alt="feed-img" class="w-full">
-          <img src="images/insta-4.webp" alt="feed-img" class="w-full">
+        <img src="images/insta-1.webp" alt="feed-img" class="w-full" />
+        <img src="images/insta-2.webp" alt="feed-img" class="w-full" />
+        <img src="images/insta-3.webp" alt="feed-img" class="w-full" />
+        <img src="images/insta-4.webp" alt="feed-img" class="w-full" />
       </section>
     </main>
     <footer class="mt-10">

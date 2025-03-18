@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beauty</title>
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -143,19 +143,32 @@
                 required
                 placeholder="Name*"
                 class="w-full h-10 bg-[var(--contact-input-bg)] border border-[var(--contact-input-border)] text-base outline-none px-3 text-black mb-5"
-                />
+              />
+              <input
+                type="email"
+                required
+                placeholder="Email*"
+                class="w-full h-10 bg-[var(--contact-input-bg)] border border-[var(--contact-input-border)] text-base outline-none px-3 text-black mb-5"
+              />
+              <div
+                class="flex h-10 items-center border border-gray-300 w-full mb-5"
+              >
+                <select
+                  class="bg-gray-200 w-18 cursor-pointer text-black px-1 h-full outline-none"
+                >
+                  <option value="+91">+91</option>
+                  <option value="+1">+1</option>
+                  <option value="+44">+44</option>
+                  <option value="+61">+61</option>
+                  <option value="+971">+971</option>
+                </select>
                 <input
-                  type="email"
+                  type="tel"
                   required
-                  placeholder="Email*"
-                  class="w-full h-10 bg-[var(--contact-input-bg)] border border-[var(--contact-input-border)] text-base outline-none px-3 text-black mb-5"
+                  placeholder="Phone No*"
+                  class="w-full h-10 bg-[var(--contact-input-bg)] border border-[var(--contact-input-border)] text-base outline-none px-3 text-black"
                 />
-                <input
-                  type="text"
-                  required
-                  placeholder="Subject*"
-                  class="w-full h-10 bg-[var(--contact-input-bg)] border border-[var(--contact-input-border)] text-base outline-none px-3 text-black mb-5"
-                />
+              </div>
               <textarea
                 placeholder="Message"
                 class="w-full min-h-20 h-30 max-h-60 py-2 bg-[var(--contact-input-bg)] border border-[var(--contact-input-border)] text-base outline-none px-3 text-black"
